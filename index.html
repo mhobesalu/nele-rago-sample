@@ -6,7 +6,10 @@
 
   <title>Nele Rägo | Global Operations & Supply Chain Leader</title>
 
-  <meta name="description" content="Nele Rägo — Global Operations and Supply Chain Leader with extensive experience in breakbulk, liner operations, logistics and international supply chains.">
+  <meta
+    name="description"
+    content="Nele Rägo — Global Operations and Supply Chain Leader with 18+ years of experience across breakbulk, liner operations, logistics and international supply chains."
+  >
 
   <style>
     * {
@@ -21,7 +24,7 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7f7;
+      background: #f4f6f5;
       color: #17252b;
       line-height: 1.6;
     }
@@ -36,15 +39,17 @@
       margin: 0 auto;
     }
 
-    /* NAVIGATION */
+    /* =========================
+       NAVIGATION
+    ========================= */
 
     nav {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(245, 247, 247, 0.94);
+      background: rgba(244, 246, 245, 0.95);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid #dce3e3;
+      border-bottom: 1px solid #dce3e1;
     }
 
     .nav-inner {
@@ -67,11 +72,17 @@
       color: #52636a;
     }
 
+    .nav-links a {
+      transition: 0.2s;
+    }
+
     .nav-links a:hover {
       color: #17252b;
     }
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       min-height: 88vh;
@@ -79,8 +90,12 @@
       align-items: center;
       padding: 100px 0;
       background:
-        radial-gradient(circle at 80% 20%, rgba(80, 125, 132, 0.13), transparent 30%),
-        linear-gradient(135deg, #f5f7f7 0%, #e9eeee 100%);
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(80, 125, 132, 0.14),
+          transparent 30%
+        ),
+        linear-gradient(135deg, #f4f6f5 0%, #e8eeee 100%);
     }
 
     .hero-grid {
@@ -94,14 +109,14 @@
       color: #50777d;
       text-transform: uppercase;
       letter-spacing: 2px;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
       margin-bottom: 20px;
     }
 
     h1 {
-      font-size: clamp(48px, 7vw, 82px);
-      line-height: 0.98;
+      font-size: clamp(50px, 7vw, 84px);
+      line-height: 0.96;
       letter-spacing: -4px;
       max-width: 800px;
       margin-bottom: 28px;
@@ -121,6 +136,12 @@
       margin-bottom: 35px;
     }
 
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
     .button {
       display: inline-block;
       background: #17252b;
@@ -137,7 +158,25 @@
       background: #50777d;
     }
 
-    /* HERO VISUAL */
+    .button-secondary {
+      display: inline-block;
+      border: 1px solid #9aabad;
+      color: #17252b;
+      padding: 13px 23px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .button-secondary:hover {
+      background: white;
+      transform: translateY(-2px);
+    }
+
+    /* =========================
+       HERO VISUAL
+    ========================= */
 
     .hero-visual {
       position: relative;
@@ -150,11 +189,11 @@
 
     .route {
       position: absolute;
-      width: 70%;
+      width: 72%;
       height: 1px;
       background: #8ca7aa;
       transform: rotate(-25deg);
-      left: 15%;
+      left: 13%;
       top: 48%;
     }
 
@@ -171,11 +210,11 @@
 
     .route-two {
       position: absolute;
-      width: 65%;
+      width: 67%;
       height: 1px;
       background: #a8babc;
       transform: rotate(28deg);
-      left: 18%;
+      left: 16%;
       top: 52%;
     }
 
@@ -190,6 +229,16 @@
       top: -4px;
     }
 
+    .route-three {
+      position: absolute;
+      width: 48%;
+      height: 1px;
+      background: #b7c5c7;
+      transform: rotate(5deg);
+      left: 28%;
+      top: 38%;
+    }
+
     .node {
       position: absolute;
       width: 12px;
@@ -200,36 +249,54 @@
     }
 
     .node.one {
-      left: 15%;
-      top: 28%;
+      left: 14%;
+      top: 27%;
     }
 
     .node.two {
-      right: 17%;
-      top: 23%;
+      right: 16%;
+      top: 22%;
     }
 
     .node.three {
-      left: 22%;
+      left: 21%;
       bottom: 25%;
     }
 
     .node.four {
-      right: 20%;
-      bottom: 19%;
+      right: 18%;
+      bottom: 18%;
+    }
+
+    .node.five {
+      left: 47%;
+      top: 36%;
     }
 
     .visual-label {
       position: absolute;
       left: 28px;
       bottom: 28px;
-      font-size: 12px;
+      font-size: 11px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
       color: #66787d;
     }
 
-    /* STATS */
+    .visual-title {
+      position: absolute;
+      top: 28px;
+      right: 28px;
+      text-align: right;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #66787d;
+    }
+
+    /* =========================
+       STATS
+    ========================= */
 
     .stats {
       padding: 65px 0;
@@ -249,7 +316,7 @@
     }
 
     .stat-number {
-      font-size: 38px;
+      font-size: 34px;
       font-weight: 700;
       letter-spacing: -1px;
       margin-bottom: 5px;
@@ -260,7 +327,9 @@
       font-size: 14px;
     }
 
-    /* SECTIONS */
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
 
     section {
       padding: 110px 0;
@@ -283,7 +352,9 @@
       font-size: 18px;
     }
 
-    /* EXPERTISE */
+    /* =========================
+       EXPERTISE
+    ========================= */
 
     .expertise-grid {
       display: grid;
@@ -314,7 +385,9 @@
       font-size: 15px;
     }
 
-    /* CAREER */
+    /* =========================
+       CAREER
+    ========================= */
 
     .career {
       background: white;
@@ -327,7 +400,11 @@
 
     .timeline-item {
       position: relative;
-      margin-bottom: 48px;
+      margin-bottom: 52px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
     }
 
     .timeline-item::before {
@@ -343,7 +420,7 @@
     }
 
     .timeline-date {
-      font-size: 13px;
+      font-size: 12px;
       color: #50777d;
       font-weight: 700;
       text-transform: uppercase;
@@ -359,6 +436,7 @@
     .company {
       color: #66777c;
       margin-bottom: 10px;
+      font-size: 15px;
     }
 
     .timeline-item p {
@@ -366,7 +444,9 @@
       max-width: 750px;
     }
 
-    /* CASE STUDIES */
+    /* =========================
+       OPERATIONS
+    ========================= */
 
     .cases-grid {
       display: grid;
@@ -378,13 +458,18 @@
       padding: 38px;
       border-radius: 8px;
       background: #e9eeee;
-      min-height: 230px;
+      min-height: 245px;
+      transition: 0.2s;
+    }
+
+    .case:hover {
+      transform: translateY(-3px);
     }
 
     .case-number {
       color: #50777d;
       font-weight: 700;
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 1px;
       margin-bottom: 20px;
     }
@@ -398,7 +483,51 @@
       color: #5d6e73;
     }
 
-    /* LEADERSHIP */
+    /* =========================
+       PROBLEM SOLVING
+    ========================= */
+
+    .problem-solving {
+      background: #17252b;
+      color: white;
+    }
+
+    .problem-solving .section-heading p {
+      color: #b8c5c7;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .problem-step {
+      border-top: 1px solid #52636a;
+      padding-top: 25px;
+    }
+
+    .problem-step-number {
+      font-size: 12px;
+      color: #8ca7aa;
+      letter-spacing: 1px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .problem-step h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .problem-step p {
+      color: #b8c5c7;
+      font-size: 14px;
+    }
+
+    /* =========================
+       LEADERSHIP
+    ========================= */
 
     .leadership {
       background: #dfe8e8;
@@ -418,15 +547,50 @@
     }
 
     .leadership-text {
-      font-size: 19px;
+      font-size: 18px;
       color: #52636a;
     }
 
-    /* CONTACT */
+    /* =========================
+       EDUCATION
+    ========================= */
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .education-card {
+      background: white;
+      border: 1px solid #dce3e3;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .education-card .year {
+      font-size: 12px;
+      color: #50777d;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .education-card h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .education-card p {
+      color: #66777c;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
 
     .contact {
-      background: #17252b;
-      color: white;
+      background: #e9eeee;
       text-align: center;
     }
 
@@ -437,18 +601,48 @@
     }
 
     .contact p {
-      color: #b8c5c7;
+      color: #617278;
       max-width: 600px;
-      margin: 0 auto 30px;
+      margin: 0 auto 32px;
       font-size: 18px;
     }
 
-    .contact-email {
-      font-size: 18px;
-      color: white;
-      border-bottom: 1px solid #8ca7aa;
-      padding-bottom: 4px;
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
     }
+
+    .contact-button {
+      display: inline-block;
+      background: #17252b;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .contact-button:hover {
+      background: #50777d;
+      transform: translateY(-2px);
+    }
+
+    .contact-button.secondary {
+      background: transparent;
+      color: #17252b;
+      border: 1px solid #9aabad;
+    }
+
+    .contact-button.secondary:hover {
+      background: white;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       background: #101b20;
@@ -458,29 +652,31 @@
       font-size: 13px;
     }
 
-    /* MOBILE */
+    /* =========================
+       MOBILE
+    ========================= */
 
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
 
       .nav-links {
         display: none;
       }
 
       .hero {
-        padding: 70px 0;
+        padding: 75px 0;
       }
 
       .hero-grid {
         grid-template-columns: 1fr;
-        gap: 45px;
+        gap: 50px;
       }
 
       h1 {
-        font-size: 54px;
+        font-size: 58px;
       }
 
       .hero-visual {
-        height: 300px;
+        height: 320px;
       }
 
       .stats-grid {
@@ -489,27 +685,33 @@
 
       .expertise-grid,
       .cases-grid,
-      .leadership-content {
+      .leadership-content,
+      .education-grid {
         grid-template-columns: 1fr;
       }
 
+      .problem-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       section {
-        padding: 75px 0;
+        padding: 80px 0;
       }
 
       .section-heading h2,
       .leadership h2 {
-        font-size: 38px;
+        font-size: 40px;
       }
 
       .contact h2 {
-        font-size: 42px;
+        font-size: 44px;
       }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 520px) {
 
-      .stats-grid {
+      .stats-grid,
+      .problem-grid {
         grid-template-columns: 1fr;
       }
 
@@ -518,7 +720,26 @@
       }
 
       h1 {
-        font-size: 46px;
+        font-size: 48px;
+        letter-spacing: -2.5px;
+      }
+
+      .hero-title {
+        font-size: 21px;
+      }
+
+      .hero-text {
+        font-size: 17px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .section-heading h2,
+      .leadership h2 {
+        font-size: 35px;
       }
     }
   </style>
@@ -526,23 +747,32 @@
 
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
 
   <nav>
     <div class="container nav-inner">
-      <div class="logo">Nele Rägo</div>
+
+      <div class="logo">
+        Nele Rägo
+      </div>
 
       <div class="nav-links">
         <a href="#expertise">Expertise</a>
         <a href="#career">Career</a>
-        <a href="#cases">Operations</a>
+        <a href="#operations">Operations</a>
+        <a href="#leadership">Leadership</a>
         <a href="#contact">Contact</a>
       </div>
+
     </div>
   </nav>
 
 
-  <!-- HERO -->
+  <!-- =========================
+       HERO
+  ========================= -->
 
   <header class="hero">
 
@@ -555,7 +785,7 @@
         </div>
 
         <h1>
-          Making complex operations work.
+          I make complex operations move.
         </h1>
 
         <div class="hero-title">
@@ -564,26 +794,44 @@
 
         <p class="hero-text">
           18+ years of international experience across breakbulk,
-          liner operations, supply chain management and global logistics —
-          connecting people, capacity and cargo to keep operations moving.
+          liner operations, supply chain management and global logistics.
+          I connect people, capacity and cargo to keep complex operations moving.
         </p>
 
-        <a class="button" href="#contact">
-          Get in touch →
-        </a>
+        <div class="hero-buttons">
+
+          <a class="button" href="#contact">
+            Get in touch →
+          </a>
+
+          <a
+            class="button-secondary"
+            href="https://www.linkedin.com/in/nele-rago-99133683/"
+            target="_blank"
+            rel="noopener noreferrer">
+            LinkedIn ↗
+          </a>
+
+        </div>
 
       </div>
 
 
       <div class="hero-visual">
 
+        <div class="visual-title">
+          Global logistics
+        </div>
+
         <div class="node one"></div>
         <div class="node two"></div>
         <div class="node three"></div>
         <div class="node four"></div>
+        <div class="node five"></div>
 
         <div class="route"></div>
         <div class="route-two"></div>
+        <div class="route-three"></div>
 
         <div class="visual-label">
           Brazil · Europe · USA · Asia
@@ -596,30 +844,63 @@
   </header>
 
 
-  <!-- STATS -->
+  <!-- =========================
+       STATS
+  ========================= -->
 
   <section class="stats">
 
     <div class="container stats-grid">
 
       <div class="stat">
-        <div class="stat-number">18+</div>
-        <div class="stat-label">Years in international logistics</div>
+
+        <div class="stat-number">
+          18+
+        </div>
+
+        <div class="stat-label">
+          Years in international logistics
+        </div>
+
       </div>
 
-      <div class="stat">
-        <div class="stat-number">400–500K</div>
-        <div class="stat-label">Tons of annual pulp transportation</div>
-      </div>
 
       <div class="stat">
-        <div class="stat-number">300–400K</div>
-        <div class="stat-label">m³ annual sawntimber cargoes</div>
+
+        <div class="stat-number">
+          400–500K
+        </div>
+
+        <div class="stat-label">
+          Tons of annual pulp transportation
+        </div>
+
       </div>
 
+
       <div class="stat">
-        <div class="stat-number">3</div>
-        <div class="stat-label">Continents in global supply chains</div>
+
+        <div class="stat-number">
+          300–400K
+        </div>
+
+        <div class="stat-label">
+          m³ annual sawntimber cargoes
+        </div>
+
+      </div>
+
+
+      <div class="stat">
+
+        <div class="stat-number">
+          3
+        </div>
+
+        <div class="stat-label">
+          Continents in global supply chains
+        </div>
+
       </div>
 
     </div>
@@ -627,7 +908,9 @@
   </section>
 
 
-  <!-- EXPERTISE -->
+  <!-- =========================
+       EXPERTISE
+  ========================= -->
 
   <section id="expertise">
 
@@ -635,7 +918,9 @@
 
       <div class="section-heading">
 
-        <div class="eyebrow">What I do</div>
+        <div class="eyebrow">
+          What I do
+        </div>
 
         <h2>
           Turning complexity into coordinated action.
@@ -653,39 +938,62 @@
       <div class="expertise-grid">
 
         <div class="expertise-card">
-          <h3>Global Operations</h3>
+
+          <h3>
+            Global Operations
+          </h3>
+
           <p>
             Leading international breakbulk and liner operations,
             coordinating cargo flows, capacity, suppliers and
             end-to-end execution.
           </p>
+
         </div>
 
+
         <div class="expertise-card">
-          <h3>Supply Chain</h3>
+
+          <h3>
+            Supply Chain
+          </h3>
+
           <p>
             Managing complex supply chains from production through
             warehouses, with a focus on availability, inventory,
             forecasting and cost.
           </p>
+
         </div>
 
+
         <div class="expertise-card">
-          <h3>Operational Problem Solving</h3>
+
+          <h3>
+            Operational Problem Solving
+          </h3>
+
           <p>
             Identifying bottlenecks early, evaluating alternatives
             and taking corrective action to maintain continuity
             and performance.
           </p>
+
         </div>
 
+
         <div class="expertise-card">
-          <h3>Continuous Improvement</h3>
+
+          <h3>
+            Continuous Improvement
+          </h3>
+
           <p>
             Developing processes, improving supplier performance,
             implementing best practices and supporting operational
             transformation.
           </p>
+
         </div>
 
       </div>
@@ -695,7 +1003,9 @@
   </section>
 
 
-  <!-- CAREER -->
+  <!-- =========================
+       CAREER
+  ========================= -->
 
   <section id="career" class="career">
 
@@ -703,7 +1013,9 @@
 
       <div class="section-heading">
 
-        <div class="eyebrow">Career</div>
+        <div class="eyebrow">
+          Career
+        </div>
 
         <h2>
           Growing with the complexity of the operation.
@@ -718,6 +1030,7 @@
 
 
       <div class="timeline">
+
 
         <div class="timeline-item">
 
@@ -856,6 +1169,7 @@
 
         </div>
 
+
       </div>
 
     </div>
@@ -863,15 +1177,19 @@
   </section>
 
 
-  <!-- OPERATIONS / CASE STUDIES -->
+  <!-- =========================
+       OPERATIONS / CASE STUDIES
+  ========================= -->
 
-  <section id="cases">
+  <section id="operations">
 
     <div class="container">
 
       <div class="section-heading">
 
-        <div class="eyebrow">Operations in action</div>
+        <div class="eyebrow">
+          Operations in action
+        </div>
 
         <h2>
           Where logistics becomes problem solving.
@@ -879,8 +1197,8 @@
 
         <p>
           Complex operations rarely follow the plan perfectly.
-          The work is about seeing problems early, coordinating the
-          right people and finding a practical way forward.
+          The work is about seeing problems early, coordinating
+          the right people and finding a practical way forward.
         </p>
 
       </div>
@@ -888,9 +1206,12 @@
 
       <div class="cases-grid">
 
+
         <div class="case">
 
-          <div class="case-number">01 · GLOBAL SUPPLY CHAIN</div>
+          <div class="case-number">
+            01 · GLOBAL SUPPLY CHAIN
+          </div>
 
           <h3>
             Brazil → Europe → USA → Asia
@@ -907,7 +1228,9 @@
 
         <div class="case">
 
-          <div class="case-number">02 · BREAKBULK</div>
+          <div class="case-number">
+            02 · BREAKBULK
+          </div>
 
           <h3>
             Moving high-volume cargo
@@ -924,7 +1247,9 @@
 
         <div class="case">
 
-          <div class="case-number">03 · TRANSFORMATION</div>
+          <div class="case-number">
+            03 · TRANSFORMATION
+          </div>
 
           <h3>
             Transport Management System
@@ -941,19 +1266,22 @@
 
         <div class="case">
 
-          <div class="case-number">04 · CONTINUITY</div>
+          <div class="case-number">
+            04 · CONTINUITY
+          </div>
 
           <h3>
             Keeping operations moving
           </h3>
 
           <p>
-            Monitors operational performance, identifies bottlenecks
-            early and develops alternatives to protect delivery,
-            cost efficiency and customer satisfaction.
+            Identifying operational bottlenecks early, developing
+            alternatives and taking corrective action to protect
+            delivery, cost efficiency and customer satisfaction.
           </p>
 
         </div>
+
 
       </div>
 
@@ -962,11 +1290,122 @@
   </section>
 
 
-  <!-- LEADERSHIP -->
+  <!-- =========================
+       PROBLEM SOLVING
+  ========================= -->
 
-  <section class="leadership">
+  <section class="problem-solving">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="eyebrow">
+          My approach
+        </div>
+
+        <h2>
+          Four steps from problem to solution.
+        </h2>
+
+        <p>
+          Operational leadership is not about having every answer.
+          It is about knowing how to find the right one quickly.
+        </p>
+
+      </div>
+
+
+      <div class="problem-grid">
+
+
+        <div class="problem-step">
+
+          <div class="problem-step-number">
+            01
+          </div>
+
+          <h3>
+            See the bottleneck
+          </h3>
+
+          <p>
+            Monitor performance, understand dependencies and
+            identify risks before they become larger problems.
+          </p>
+
+        </div>
+
+
+        <div class="problem-step">
+
+          <div class="problem-step-number">
+            02
+          </div>
+
+          <h3>
+            Bring people together
+          </h3>
+
+          <p>
+            Align suppliers, sales, production, logistics and
+            customers around the operational reality.
+          </p>
+
+        </div>
+
+
+        <div class="problem-step">
+
+          <div class="problem-step-number">
+            03
+          </div>
+
+          <h3>
+            Find the alternative
+          </h3>
+
+          <p>
+            Evaluate capacity, routes, suppliers, timing and
+            cost to create practical alternatives.
+          </p>
+
+        </div>
+
+
+        <div class="problem-step">
+
+          <div class="problem-step-number">
+            04
+          </div>
+
+          <h3>
+            Execute
+          </h3>
+
+          <p>
+            Move from analysis to action and keep the operation
+            moving toward the required outcome.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       LEADERSHIP
+  ========================= -->
+
+  <section id="leadership" class="leadership">
 
     <div class="container leadership-content">
+
 
       <div>
 
@@ -992,8 +1431,8 @@
 
         <p>
           I enjoy bringing different stakeholders together, understanding
-        what is really blocking progress and creating practical solutions
-        that work across the organisation.
+          what is really blocking progress and creating practical solutions
+          that work across the organisation.
         </p>
 
         <br>
@@ -1005,12 +1444,114 @@
 
       </div>
 
+
     </div>
 
   </section>
 
 
-  <!-- CONTACT -->
+  <!-- =========================
+       EDUCATION
+  ========================= -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="eyebrow">
+          Education & Development
+        </div>
+
+        <h2>
+          Business, culture and continuous learning.
+        </h2>
+
+      </div>
+
+
+      <div class="education-grid">
+
+
+        <div class="education-card">
+
+          <div class="year">
+            2004 — 2007
+          </div>
+
+          <h3>
+            Bachelor of Business Administration
+          </h3>
+
+          <p>
+            Estonian Business School
+          </p>
+
+        </div>
+
+
+        <div class="education-card">
+
+          <div class="year">
+            1998 — 2003
+          </div>
+
+          <h3>
+            Bachelor’s Degree — Culture / Art / History
+          </h3>
+
+          <p>
+            University of Tartu
+          </p>
+
+        </div>
+
+
+        <div class="education-card">
+
+          <div class="year">
+            2023
+          </div>
+
+          <h3>
+            Supply Chain Academy
+          </h3>
+
+          <p>
+            Stora Enso internal development module
+          </p>
+
+        </div>
+
+
+        <div class="education-card">
+
+          <div class="year">
+            2023
+          </div>
+
+          <h3>
+            Agile Leadership
+          </h3>
+
+          <p>
+            Stora Enso internal training module
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================= -->
 
   <section id="contact" class="contact">
 
@@ -1029,18 +1570,34 @@
         logistics transformation or simply exchanging ideas?
       </p>
 
-      <a
-        class="contact-email"
-        href="mailto:nele.rago@mail.ee">
-        nele.rago@mail.ee
-      </a>
+
+      <div class="contact-links">
+
+        <a
+          class="contact-button"
+          href="mailto:nele.rago@mail.ee">
+          Email Nele
+        </a>
+
+
+        <a
+          class="contact-button secondary"
+          href="https://www.linkedin.com/in/nele-rago-99133683/"
+          target="_blank"
+          rel="noopener noreferrer">
+          LinkedIn ↗
+        </a>
+
+      </div>
 
     </div>
 
   </section>
 
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================= -->
 
   <footer>
 
