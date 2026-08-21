@@ -1,1 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Nele Rägo | Global Operations & Supply Chain Leader</title>
+
+  <meta name="description" content="Nele Rägo — Global Operations and Supply Chain Leader with extensive experience in breakbulk, liner operations, logistics and international supply chains.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7f7;
+      color: #17252b;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(245, 247, 247, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #dce3e3;
+    }
+
+    .nav-inner {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-size: 14px;
+      color: #52636a;
+    }
+
+    .nav-links a:hover {
+      color: #17252b;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 0;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(80, 125, 132, 0.13), transparent 30%),
+        linear-gradient(135deg, #f5f7f7 0%, #e9eeee 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: #50777d;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: 0.98;
+      letter-spacing: -4px;
+      max-width: 800px;
+      margin-bottom: 28px;
+    }
+
+    .hero-title {
+      font-size: 24px;
+      color: #50777d;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+
+    .hero-text {
+      font-size: 19px;
+      max-width: 680px;
+      color: #52636a;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #17252b;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #50777d;
+    }
+
+    /* HERO VISUAL */
+
+    .hero-visual {
+      position: relative;
+      height: 430px;
+      border: 1px solid #cfdada;
+      border-radius: 12px;
+      background: #edf2f2;
+      overflow: hidden;
+    }
+
+    .route {
+      position: absolute;
+      width: 70%;
+      height: 1px;
+      background: #8ca7aa;
+      transform: rotate(-25deg);
+      left: 15%;
+      top: 48%;
+    }
+
+    .route::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #50777d;
+      right: 0;
+      top: -4px;
+    }
+
+    .route-two {
+      position: absolute;
+      width: 65%;
+      height: 1px;
+      background: #a8babc;
+      transform: rotate(28deg);
+      left: 18%;
+      top: 52%;
+    }
+
+    .route-two::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #50777d;
+      left: 0;
+      top: -4px;
+    }
+
+    .node {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border: 3px solid #50777d;
+      background: #edf2f2;
+      border-radius: 50%;
+    }
+
+    .node.one {
+      left: 15%;
+      top: 28%;
+    }
+
+    .node.two {
+      right: 17%;
+      top: 23%;
+    }
+
+    .node.three {
+      left: 22%;
+      bottom: 25%;
+    }
+
+    .node.four {
+      right: 20%;
+      bottom: 19%;
+    }
+
+    .visual-label {
+      position: absolute;
+      left: 28px;
+      bottom: 28px;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #66787d;
+    }
+
+    /* STATS */
+
+    .stats {
+      padding: 65px 0;
+      background: #17252b;
+      color: white;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .stat {
+      border-left: 1px solid #52636a;
+      padding-left: 22px;
+    }
+
+    .stat-number {
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 5px;
+    }
+
+    .stat-label {
+      color: #b8c5c7;
+      font-size: 14px;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 110px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 55px;
+    }
+
+    .section-heading h2 {
+      font-size: 46px;
+      letter-spacing: -2px;
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
+
+    .section-heading p {
+      color: #64767b;
+      font-size: 18px;
+    }
+
+    /* EXPERTISE */
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .expertise-card {
+      background: white;
+      border: 1px solid #dce3e3;
+      padding: 32px;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .expertise-card:hover {
+      transform: translateY(-4px);
+      border-color: #9bb2b5;
+    }
+
+    .expertise-card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .expertise-card p {
+      color: #66777c;
+      font-size: 15px;
+    }
+
+    /* CAREER */
+
+    .career {
+      background: white;
+    }
+
+    .timeline {
+      border-left: 2px solid #cbd7d8;
+      padding-left: 35px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 48px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #50777d;
+      left: -42px;
+      top: 8px;
+      border: 4px solid white;
+    }
+
+    .timeline-date {
+      font-size: 13px;
+      color: #50777d;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 7px;
+    }
+
+    .timeline-item h3 {
+      font-size: 24px;
+      margin-bottom: 3px;
+    }
+
+    .company {
+      color: #66777c;
+      margin-bottom: 10px;
+    }
+
+    .timeline-item p {
+      color: #5c6c71;
+      max-width: 750px;
+    }
+
+    /* CASE STUDIES */
+
+    .cases-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .case {
+      padding: 38px;
+      border-radius: 8px;
+      background: #e9eeee;
+      min-height: 230px;
+    }
+
+    .case-number {
+      color: #50777d;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .case h3 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .case p {
+      color: #5d6e73;
+    }
+
+    /* LEADERSHIP */
+
+    .leadership {
+      background: #dfe8e8;
+    }
+
+    .leadership-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .leadership h2 {
+      font-size: 46px;
+      line-height: 1.05;
+      letter-spacing: -2px;
+    }
+
+    .leadership-text {
+      font-size: 19px;
+      color: #52636a;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #17252b;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 56px;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      color: #b8c5c7;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+    }
+
+    .contact-email {
+      font-size: 18px;
+      color: white;
+      border-bottom: 1px solid #8ca7aa;
+      padding-bottom: 4px;
+    }
+
+    footer {
+      background: #101b20;
+      color: #77888d;
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      h1 {
+        font-size: 54px;
+      }
+
+      .hero-visual {
+        height: 300px;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .expertise-grid,
+      .cases-grid,
+      .leadership-content {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .section-heading h2,
+      .leadership h2 {
+        font-size: 38px;
+      }
+
+      .contact h2 {
+        font-size: 42px;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stat {
+        padding-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+    <div class="container nav-inner">
+      <div class="logo">Nele Rägo</div>
+
+      <div class="nav-links">
+        <a href="#expertise">Expertise</a>
+        <a href="#career">Career</a>
+        <a href="#cases">Operations</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <div class="container hero-grid">
+
+      <div>
+
+        <div class="eyebrow">
+          Global Operations · Supply Chain · Logistics
+        </div>
+
+        <h1>
+          Making complex operations work.
+        </h1>
+
+        <div class="hero-title">
+          Global Operations & Supply Chain Leader
+        </div>
+
+        <p class="hero-text">
+          18+ years of international experience across breakbulk,
+          liner operations, supply chain management and global logistics —
+          connecting people, capacity and cargo to keep operations moving.
+        </p>
+
+        <a class="button" href="#contact">
+          Get in touch →
+        </a>
+
+      </div>
+
+
+      <div class="hero-visual">
+
+        <div class="node one"></div>
+        <div class="node two"></div>
+        <div class="node three"></div>
+        <div class="node four"></div>
+
+        <div class="route"></div>
+        <div class="route-two"></div>
+
+        <div class="visual-label">
+          Brazil · Europe · USA · Asia
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- STATS -->
+
+  <section class="stats">
+
+    <div class="container stats-grid">
+
+      <div class="stat">
+        <div class="stat-number">18+</div>
+        <div class="stat-label">Years in international logistics</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-number">400–500K</div>
+        <div class="stat-label">Tons of annual pulp transportation</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-number">300–400K</div>
+        <div class="stat-label">m³ annual sawntimber cargoes</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Continents in global supply chains</div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EXPERTISE -->
+
+  <section id="expertise">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="eyebrow">What I do</div>
+
+        <h2>
+          Turning complexity into coordinated action.
+        </h2>
+
+        <p>
+          I work at the intersection of operations, logistics,
+          supply chain, suppliers and commercial needs — making sure
+          the right decisions happen at the right time.
+        </p>
+
+      </div>
+
+
+      <div class="expertise-grid">
+
+        <div class="expertise-card">
+          <h3>Global Operations</h3>
+          <p>
+            Leading international breakbulk and liner operations,
+            coordinating cargo flows, capacity, suppliers and
+            end-to-end execution.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>Supply Chain</h3>
+          <p>
+            Managing complex supply chains from production through
+            warehouses, with a focus on availability, inventory,
+            forecasting and cost.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>Operational Problem Solving</h3>
+          <p>
+            Identifying bottlenecks early, evaluating alternatives
+            and taking corrective action to maintain continuity
+            and performance.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>Continuous Improvement</h3>
+          <p>
+            Developing processes, improving supplier performance,
+            implementing best practices and supporting operational
+            transformation.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CAREER -->
+
+  <section id="career" class="career">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="eyebrow">Career</div>
+
+        <h2>
+          Growing with the complexity of the operation.
+        </h2>
+
+        <p>
+          A career built through progressively broader responsibility
+          across logistics, supply chain and global operations.
+        </p>
+
+      </div>
+
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            2022 — Present
+          </div>
+
+          <h3>
+            Manager, Breakbulk & Liner Operations
+          </h3>
+
+          <div class="company">
+            Stora Enso Eesti AS
+          </div>
+
+          <p>
+            Leading global breakbulk and liner operations, ensuring
+            timely and cost-efficient delivery while maintaining
+            targeted OTIF and customer satisfaction levels.
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            2019 — 2022
+          </div>
+
+          <h3>
+            Manager, Breakbulk Operations
+          </h3>
+
+          <div class="company">
+            Stora Enso Eesti AS
+          </div>
+
+          <p>
+            Led global breakbulk operations within sourcing and
+            logistics, developing processes, supplier relationships,
+            operational procedures and continuous improvement initiatives.
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            2017 — 2019
+          </div>
+
+          <h3>
+            Supply Chain Manager
+          </h3>
+
+          <div class="company">
+            Stora Enso Amsterdam B.V.
+          </div>
+
+          <p>
+            Managed pulp supply from production in Brazil into
+            warehouses across Europe, the United States and Asia,
+            balancing forecasts, inventory, warehouse capacity and cost.
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            2008 — 2017
+          </div>
+
+          <h3>
+            Trade Area Manager
+          </h3>
+
+          <div class="company">
+            Stora Enso Eesti AS — Breakbulk Sea Services
+          </div>
+
+          <p>
+            Contracted and planned vessels according to sales plans
+            and factory production. Managed operational matters across
+            sawntimber, pellets, chips, roundwood and pulp transportation.
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            2007 — 2008
+          </div>
+
+          <h3>
+            Logistics
+          </h3>
+
+          <div class="company">
+            Stora Enso Mets AS
+          </div>
+
+          <p>
+            Worked with logistics cost calculations, financial analysis,
+            route planning, logistics reorganisation and subcontractor
+            selection.
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-date">
+            2003 — 2007
+          </div>
+
+          <h3>
+            Wood Supply Management
+          </h3>
+
+          <div class="company">
+            Stora Enso Mets AS
+          </div>
+
+          <p>
+            Supported the Wood Supply Management team across office
+            management, back-office operations, portal administration
+            and internal communications.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OPERATIONS / CASE STUDIES -->
+
+  <section id="cases">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="eyebrow">Operations in action</div>
+
+        <h2>
+          Where logistics becomes problem solving.
+        </h2>
+
+        <p>
+          Complex operations rarely follow the plan perfectly.
+          The work is about seeing problems early, coordinating the
+          right people and finding a practical way forward.
+        </p>
+
+      </div>
+
+
+      <div class="cases-grid">
+
+        <div class="case">
+
+          <div class="case-number">01 · GLOBAL SUPPLY CHAIN</div>
+
+          <h3>
+            Brazil → Europe → USA → Asia
+          </h3>
+
+          <p>
+            Managed pulp flows from production in Brazil to warehouses
+            across multiple continents, coordinating demand, forecasts,
+            inventory, warehouse capacity and internal stakeholders.
+          </p>
+
+        </div>
+
+
+        <div class="case">
+
+          <div class="case-number">02 · BREAKBULK</div>
+
+          <h3>
+            Moving high-volume cargo
+          </h3>
+
+          <p>
+            Planned and coordinated vessel capacity for hundreds of
+            thousands of cubic metres of sawntimber and other forest
+            products, aligning factories, sales plans and transport.
+          </p>
+
+        </div>
+
+
+        <div class="case">
+
+          <div class="case-number">03 · TRANSFORMATION</div>
+
+          <h3>
+            Transport Management System
+          </h3>
+
+          <p>
+            Took responsibility for the Breakbulk component of a new
+            transport management system implementation, connecting
+            operational requirements with a new digital workflow.
+          </p>
+
+        </div>
+
+
+        <div class="case">
+
+          <div class="case-number">04 · CONTINUITY</div>
+
+          <h3>
+            Keeping operations moving
+          </h3>
+
+          <p>
+            Monitors operational performance, identifies bottlenecks
+            early and develops alternatives to protect delivery,
+            cost efficiency and customer satisfaction.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LEADERSHIP -->
+
+  <section class="leadership">
+
+    <div class="container leadership-content">
+
+      <div>
+
+        <div class="eyebrow">
+          Leadership
+        </div>
+
+        <h2>
+          Calm when operations get complicated.
+        </h2>
+
+      </div>
+
+
+      <div class="leadership-text">
+
+        <p>
+          My experience has taught me that strong operations are built
+          through people, communication and good decisions.
+        </p>
+
+        <br>
+
+        <p>
+          I enjoy bringing different stakeholders together, understanding
+        what is really blocking progress and creating practical solutions
+        that work across the organisation.
+        </p>
+
+        <br>
+
+        <p>
+          I am particularly interested in continuing to grow as a leader,
+          developing people and contributing at a broader strategic level.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="contact">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        Contact
+      </div>
+
+      <h2>
+        Let's connect.
+      </h2>
+
+      <p>
+        Interested in global operations, supply chain leadership,
+        logistics transformation or simply exchanging ideas?
+      </p>
+
+      <a
+        class="contact-email"
+        href="mailto:nele.rago@mail.ee">
+        nele.rago@mail.ee
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2026 Nele Rägo · Global Operations & Supply Chain
+
+  </footer>
+
+</body>
+</html>
